@@ -1,0 +1,202 @@
+/* Ajoutez vos styles CSS ici */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #2b2b2b;
+    color: #f00;
+    padding: 20px;
+    text-align: center;
+
+    background-image: url('movie-theatre-png-35902-fotor-bg-remover-2023121821372.png');
+    background-repeat: no-repeat; /* This will repeat the image both horizontally and vertically */
+    background-size: 200px 100px;
+    /* Other background properties */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+table th {
+    background-color: #f2f2f2;
+    cursor: pointer;
+}
+
+table th:hover {
+    background-color: #ddd;
+}
+
+/* Apply styles to the form */
+.movie-form {
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels */
+label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+}
+
+/* Style for input fields */
+input[type="text"],
+input[type="number"],
+input[type="submit"] {
+    width: calc(100% - 12px);
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+/* Style for submit button */
+input[type="submit"] {
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+/* Style for the toggle button */
+#toggleFormButton {
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+#toggleFormButton:hover {
+    background-color: #45a049;
+}
+
+/* Style for the delete button */
+.deleteButton {
+    width: 30px;
+    height: 30px;
+    background-color: #ff6347;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Style for the delete icon using pseudo-elements */
+.deleteButton::before,
+.deleteButton::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    height: 2px;
+    background-color: white;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.deleteButton::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+.icon-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+}
+
+/* Style for the icon */
+.icon {
+    display: inline-block;
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px;
+    background-image: url('https://www.example.com/path/to/your-icon.png');
+    background-size: cover;
+}
+/* Style for the button-like link */
+.button-like-link {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    cursor: pointer; /* Change cursor to indicate clickability */
+    user-select: none; /* Prevent text selection */
+    transition: background-color 0.3s ease; /* Smooth transition for background color change */
+}
+
+/* Style for the button-like link on hover */
+.button-like-link:hover {
+    background-color: #f0f0f0; /* Change background color on hover */
+}
+
+/* Style for the button-like link when clicked */
+.button-like-link:active {
+    transform: translateY(2px); /* Add slight vertical shift on click for pressed effect */
+}
+
+
+/* Style for the icon */
+.icon {
+    display: inline-block;
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px;
+    background-image: url('https://www.example.com/path/to/your-icon.png');
+    background-size: cover;
+}
+.highlight {
+    background-color: yellow; /* Change this to your desired highlight color */
+    /* You can add more styles as needed */
+}
+/* Define styles for editable and non-editable cells */
+.editable {
+    cursor: pointer;
+    position: relative;
+}
+
+.editable input {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 10px);
+}
+
+.editable label {
+    display: block;
+}
