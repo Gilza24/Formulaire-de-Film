@@ -22,9 +22,6 @@ Ce gestionnaire de liste de films et séries est une application web légère qu
 3. **Filtrer la Liste** :
     - Utilisez la barre de recherche en haut pour filtrer la liste en fonction de différents critères. La liste se mettra à jour dynamiquement en fonction de votre recherche.
 
-4. **Éditer les Détails** :
-    - Cliquez sur une cellule pour la rendre éditable et mettez à jour les détails directement dans la liste.
-
 ## Technologies Utilisées
 
 Ce projet utilise les technologies suivantes :
