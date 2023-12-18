@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ma Liste de Films et Séries</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="...">
+
+</head>
+<body>
+<header>
+    <h1><label for="searchInput">Ma Liste de Films et Séries à Voir</label></h1>
+    <input type="text" id="searchInput" placeholder="Rechercher dans la liste de film(s)...">
+</header>
+
+<main>
+    <button id="toggleFormButton">Afficher le formulaire</button>
+    <form id="addMovieForm" style="display: none;">
+        <label for="movieName">Nom :</label>
+        <input type="text" id="movieName" required><br>
+
+        <label for="availableOn">Disponible sur :</label>
+        <input type="text" id="availableOn" required><br>
+
+        <label for="mainActors">Acteurs principaux :</label>
+        <input type="text" id="mainActors" required><br>
+
+        <label for="director">Réalisateur :</label>
+        <input type="text" id="director"><br>
+
+        <label for="year">Année :</label>
+        <input type="number" id="year"><br>
+
+        <label for="imageUrl">URL de l'affiche :</label>
+        <input type="text" id="imageUrl"><br>
+
+        <input type="submit" value="Ajouter">
+    </form>
+
+    <table id="moviesTable">
+        <thead>
+        <tr>
+            <th>Nom</th>
+            <th>Disponible sur</th>
+            <th>Acteurs principaux</th>
+            <th>Réalisateur</th>
+            <th>Année</th>
+            <th>Image</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+        <tbody id="moviesList">
+        <!-- Les entrées seront ajoutées ici -->
+        </tbody>
+    </table>
+</main>
+
+<script>
+    // Le script JavaScript complet que nous avons élaboré précédemment
+</script>
+</body>
+</html>
